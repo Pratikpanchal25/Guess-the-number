@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Poppins:wght@500&display=swap");
+body {
+  background: #000305;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  font-family: "Poppins", sans-serif;
+  gap: 1rem;
+}
+
+.title_main {
+  font-size: 3rem;
+  
+}
+.instruction {
+  font-size: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+input {
+  height: 3rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+button {
+  height: 3rem;
+  width: 16rem;
+  background: #750e21;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px #750e21;
+  cursor: pointer; 
+  transition: 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: white;
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 20px;
+  color: black;
+  
+}
+.pre-guesses {
+    font-size: 25px;
+}
+.remaining{
+    font-size: 25px;
+}
+
+.result{
+    font-size: 2rem;
+}
+.restart{
+  display: none;
+}
+
+
+@media screen and (max-width: 550px){
+  .title_main{
+    font-size: 2.2rem;
+  }
+  .instruction {
+    font-size: 0.7rem;
+  }
+  .details{
+    width: 18rem;
+  }
+  .pre-guesses{
+    font-size: 20px;
+  }
+  .result{
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="stye.css" />
+  </head>
+  <body>
+    <div class="title_main">Guess The number</div>
+    <div class="instruction">
+      <p class="instruction">
+        Try and Guess Random Number Between 1 to 100. <br />
+        You have 10 Attempts To Guess The Right Number
+      </p>
+    </div>
+    <form>
+      <input id="userInput" placeholder="Enter Your Guess" type="number" />
+      <button class="btn">Submit Guess</button>
+    </form>
+    <div class="details">
+      <label for="">Previous Guesses</label><span class="pre-guesses"> </span>
+      <label for="">Guesses Remaining</label><span class="remaining"> 10</span>
+    </div>
+    <div class="result"></div>
+    <div>
+      <button onclick="window.location.reload()" class="restart">Restart</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
