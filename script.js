@@ -27,7 +27,7 @@ function validate(number) {
     preGuesses.innerHTML += `${number}, `;
 
     if (remainingNum === 10) {
-      displayMessage(`You Lost The Number was ${randomNumber}`);
+      displayMessage(`You Lost , The Number was ${randomNumber}`);
       endgame()
     } else {
       guesses(`${10 - remainingNum++}`);
@@ -56,7 +56,12 @@ function displayMessage(message) {
 }
 
 function newgame() {
-  document.reload();
+  // document.reload();
+  preGuesses.innerHTML = ""
+  userInput.removeAttribute("disabled", "");
+  remaining.innerHTML = "10"
+  remainingNum = 1
+  
 }
 
 function endgame() {
