@@ -56,7 +56,7 @@ function displayMessage(message) {
 }
 
 function newgame() {
-  // document.reload();
+  
   preGuesses.innerHTML = ""
   userInput.removeAttribute("disabled", "");
   remaining.innerHTML = "10"

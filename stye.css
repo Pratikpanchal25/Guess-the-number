@@ -8,7 +8,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
+  overflow: hidden;
   font-family: "Poppins", sans-serif;
   gap: 1rem;
 }
@@ -79,6 +79,9 @@ button:hover{
 
 
 @media screen and (max-width: 550px){
+  body{
+    overflow: scroll;
+  }
   .title_main{
     font-size: 2.2rem;
   }
